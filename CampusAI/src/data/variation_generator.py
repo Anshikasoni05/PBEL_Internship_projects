@@ -3,16 +3,34 @@ from src.utils.synonyms import SYNONYMS
 
 # Question Templates
 TEMPLATES = [
+
     "{}",
+
     "Can you tell me {}?",
-    "Please tell me {}",
-    "I want to know {}",
+    "Please tell me {}.",
+    "I want to know {}.",
     "Could you explain {}?",
-    "Give me information about {}",
-    "Tell me about {}",
+    "Give me information about {}.",
+    "Tell me about {}.",
     "What is {}?",
     "Can you help me with {}?",
-    "I need information regarding {}"
+    "I need information regarding {}.",
+
+    "May I know {}?",
+    "Could you please tell me {}?",
+    "Would you explain {}?",
+    "Please provide details about {}.",
+    "Can you provide information about {}?",
+    "I would like to know {}.",
+    "Can you guide me regarding {}?",
+    "Please explain {}.",
+    "I have a question about {}.",
+    "Can you answer my question about {}?",
+    "Tell me more about {}.",
+    "Give me complete details about {}.",
+    "Can you clarify {}?",
+    "I need help regarding {}.",
+    "Please help me understand {}."
 ]
 
 
@@ -60,29 +78,23 @@ def template_variations(sentence):
 
 
 def generate_variations(sentence):
-    """
-    Generate all possible variations.
-    """
 
     dataset = set()
 
-    # Original
-    dataset.add(sentence)
-
-    # Synonym Replacement
     synonym_versions = synonym_replacement(sentence)
 
     for item in synonym_versions:
 
         dataset.add(item)
 
-    # Template Variations
-    for item in synonym_versions:
+        for template in template_variations(item):
 
-        template_versions = template_variations(item)
+            dataset.add(template)
 
-        for temp in template_versions:
+            dataset.add(template.lower())
 
-            dataset.add(temp)
+            dataset.add(template.upper())
+
+            dataset.add(template.capitalize())
 
     return list(dataset)
