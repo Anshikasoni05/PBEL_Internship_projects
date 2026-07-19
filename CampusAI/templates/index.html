@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusAI - AI Powered College Assistant</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="chat-container">
+
+    <div class="header">
+
+        <div>
+
+            <h1>🎓 CampusAI</h1>
+
+            <p>AI Powered College Assistant</p>
+
+        </div>
+
+        <div class="status">
+            🟢 Online
+        </div>
+
+    </div>
+
+    <div class="features">
+
+        Admissions • Scholarships • Hostel • Fees • Courses • Placements • Exams
+
+    </div>
+
+    <div id="chat-box">
+
+        <div class="bot-message">
+
+            👋 Hello! Welcome to <strong>CampusAI</strong>.
+
+            <br><br>
+
+            Ask me anything about:
+
+            <ul>
+
+                <li>Admissions</li>
+
+                <li>Hostel</li>
+
+                <li>Scholarships</li>
+
+                <li>Fees</li>
+
+                <li>Courses</li>
+
+                <li>Placements</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="input-area">
+
+        <input
+            type="text"
+            id="message"
+            placeholder="Ask your question here..."
+            autocomplete="off"
+        >
+
+        <button onclick="sendMessage()">
+
+            ➜
+
+        </button>
+
+    </div>
+
+    <div class="footer">
+
+        Powered by Machine Learning • Logistic Regression • TF-IDF
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
