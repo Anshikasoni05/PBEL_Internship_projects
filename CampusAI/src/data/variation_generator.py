@@ -30,7 +30,17 @@ TEMPLATES = [
     "Give me complete details about {}.",
     "Can you clarify {}?",
     "I need help regarding {}.",
-    "Please help me understand {}."
+    "Please help me understand {}.",
+    "How to {}?",
+    "How do I {}?",
+    "How can I {}?",
+    "Where can I {}?",
+    "Guide me to {}",
+    "What is the process for {}?",
+    "Can you explain how to {}?",
+    "I want to {}",
+    "Steps to {}",
+    "Procedure for {}"
 ]
 
 
