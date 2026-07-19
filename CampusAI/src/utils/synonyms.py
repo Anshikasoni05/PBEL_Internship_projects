@@ -1,34 +1,96 @@
 SYNONYMS = {
 
-    "hello": [
-        "hi",
-        "hey",
-        "greetings",
-        "hello there",
-        "hi there"
+    "admission": [
+        "enrollment",
+        "joining",
+        "registration"
     ],
 
     "hostel": [
-        "accommodation",
+        "dormitory",
         "residence",
-        "student hostel"
+        "accommodation"
     ],
 
     "fees": [
         "fee",
-        "tuition fee",
-        "college fee"
-    ],
-
-    "admission": [
-        "enrollment",
-        "apply",
-        "join college"
+        "payment",
+        "charges",
+        "cost"
     ],
 
     "scholarship": [
         "financial aid",
         "grant",
-        "education scholarship"
+        "funding"
+    ],
+
+    "course": [
+        "program",
+        "subject",
+        "curriculum"
+    ],
+
+    "courses": [
+        "programs",
+        "subjects"
+    ],
+
+    "placement": [
+        "job",
+        "recruitment",
+        "campus placement"
+    ],
+
+    "library": [
+        "books",
+        "reading room"
+    ],
+
+    "attendance": [
+        "presence",
+        "attendance percentage"
+    ],
+
+    "exam": [
+        "examination",
+        "test"
+    ],
+
+    "examination": [
+        "exam",
+        "test"
+    ],
+
+    "faculty": [
+        "teacher",
+        "professor",
+        "staff"
+    ],
+
+    "transport": [
+        "bus",
+        "travel"
+    ],
+
+    "canteen": [
+        "cafeteria",
+        "food court"
+    ],
+
+    "contact": [
+        "phone",
+        "email",
+        "support"
+    ],
+
+    "timing": [
+        "schedule",
+        "working hours"
+    ],
+
+    "college": [
+        "campus",
+        "institute"
     ]
 }

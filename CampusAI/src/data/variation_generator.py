@@ -1,44 +1,88 @@
 import random
-from nltk.corpus import wordnet
-
 from src.utils.synonyms import SYNONYMS
-QUESTION_PREFIXES = [
-    "",
-    "Can you tell me ",
-    "Could you tell me ",
-    "Please tell me ",
-    "I want to know ",
-    "Can you explain ",
-    "Kindly tell me ",
-    "May I know "
+
+# Question Templates
+TEMPLATES = [
+    "{}",
+    "Can you tell me {}?",
+    "Please tell me {}",
+    "I want to know {}",
+    "Could you explain {}?",
+    "Give me information about {}",
+    "Tell me about {}",
+    "What is {}?",
+    "Can you help me with {}?",
+    "I need information regarding {}"
 ]
-def get_wordnet_synonyms(word):
+
+
+def synonym_replacement(sentence):
     """
-    Get synonyms from WordNet.
+    Replace words with synonyms.
+    """
+    variations = set()
+
+    variations.add(sentence)
+
+    words = sentence.lower().split()
+
+    for i, word in enumerate(words):
+
+        clean_word = word.strip("?,.!")
+
+        if clean_word in SYNONYMS:
+
+            for synonym in SYNONYMS[clean_word]:
+
+                new_words = words.copy()
+
+                new_words[i] = synonym
+
+                variations.add(" ".join(new_words).capitalize())
+
+    return list(variations)
+
+
+def template_variations(sentence):
+    """
+    Generate template-based variations.
     """
 
-    synonyms = set()
+    variations = []
 
-    for syn in wordnet.synsets(word):
+    sentence = sentence.lower()
 
-        for lemma in syn.lemmas():
+    for template in TEMPLATES:
 
-            synonym = lemma.name().replace("_", " ")
+        variations.append(template.format(sentence).capitalize())
 
-            if synonym.lower() != word.lower():
-                synonyms.add(synonym.lower())
+    return variations
 
-    return list(synonyms)
-def get_all_synonyms(word):
 
-    synonyms = set()
+def generate_variations(sentence):
+    """
+    Generate all possible variations.
+    """
 
-    if word in SYNONYMS:
-        synonyms.update(SYNONYMS[word])
+    dataset = set()
 
-    synonyms.update(get_wordnet_synonyms(word))
+    # Original
+    dataset.add(sentence)
 
-    return list(synonyms)
-if __name__ == "__main__":
+    # Synonym Replacement
+    synonym_versions = synonym_replacement(sentence)
 
-    print(get_all_synonyms("scholarship"))
+    for item in synonym_versions:
+
+        dataset.add(item)
+
+    # Template Variations
+    for item in synonym_versions:
+
+        template_versions = template_variations(item)
+
+        for temp in template_versions:
+
+            dataset.add(temp)
+
+    return list(dataset)
