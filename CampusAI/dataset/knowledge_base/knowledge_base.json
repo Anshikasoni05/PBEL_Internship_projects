@@ -1,0 +1,28 @@
+{
+  "greeting": [
+    {
+      "question": "Hello",
+      "answers": [
+        "Hello! Welcome to CampusAI. How can I assist you today?",
+        "Hi! I'm CampusAI. Feel free to ask me anything about the college.",
+        "Greetings! How may I help you today?"
+      ]
+    },
+    {
+      "question": "Hi",
+      "answers": [
+        "Hi there! What would you like to know about the college?",
+        "Hello! I'm here to answer your college-related questions.",
+        "Welcome! How can I help you today?"
+      ]
+    },
+    {
+      "question": "Good Morning",
+      "answers": [
+        "Good Morning! Hope you're having a great day. How can I help you?",
+        "Good Morning! Ask me anything related to the college.",
+        "Morning! I'm ready to assist you."
+      ]
+    }
+  ]
+}
