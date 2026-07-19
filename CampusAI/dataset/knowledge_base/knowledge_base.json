@@ -1,28 +1,302 @@
+[
+  {
+  "intent": "greeting",
+  "patterns": [
+    "hello",
+    "hi",
+    "hey",
+    "good morning",
+    "good afternoon",
+    "good evening",
+    "how are you",
+    "hii",
+    "hey there",
+    "hello campus ai"
+  ],
+  "responses": [
+    "Hello! Welcome to CampusAI. How can I assist you today?",
+    "Hi! I'm CampusAI. Feel free to ask me anything about the college.",
+    "Greetings! How may I help you today?"
+  ]
+},
 {
-  "greeting": [
-    {
-      "question": "Hello",
-      "answers": [
-        "Hello! Welcome to CampusAI. How can I assist you today?",
-        "Hi! I'm CampusAI. Feel free to ask me anything about the college.",
-        "Greetings! How may I help you today?"
-      ]
-    },
-    {
-      "question": "Hi",
-      "answers": [
-        "Hi there! What would you like to know about the college?",
-        "Hello! I'm here to answer your college-related questions.",
-        "Welcome! How can I help you today?"
-      ]
-    },
-    {
-      "question": "Good Morning",
-      "answers": [
-        "Good Morning! Hope you're having a great day. How can I help you?",
-        "Good Morning! Ask me anything related to the college.",
-        "Morning! I'm ready to assist you."
-      ]
-    }
+  "intent": "admission",
+  "patterns": [
+    "How can I take admission?",
+    "What is the admission process?",
+    "How do I apply for admission?",
+    "Admission procedure",
+    "Admission form",
+    "Can I apply online?",
+    "College admission",
+    "Admission portal",
+    "Where can I apply?",
+    "Admission details"
+  ],
+  "responses": [
+    "Students can apply online through the college admission portal.",
+    "Admission is based on eligibility criteria and document verification.",
+    "Visit the admission office for complete admission guidance."
+  ]
+},
+{
+  "intent": "scholarship",
+  "patterns": [
+    "Scholarship details",
+    "Scholarship eligibility",
+    "Can I get scholarship?",
+    "Who is eligible for scholarship?",
+    "Scholarship last date",
+    "Government scholarship",
+    "Financial aid",
+    "Scholarship form",
+    "How to apply for scholarship?",
+    "Is scholarship available?"
+  ],
+  "responses": [
+    "Eligible students can apply through the scholarship portal.",
+    "Scholarship eligibility depends on college and government rules.",
+    "Please contact the scholarship cell for complete information."
+  ]
+},
+{
+  "intent": "hostel",
+  "patterns": [
+    "Hostel facility",
+    "Hostel fees",
+    "Girls hostel",
+    "Boys hostel",
+    "Hostel rooms",
+    "Hostel admission",
+    "Can I stay in hostel?",
+    "Hostel availability",
+    "College hostel",
+    "Hostel details"
+  ],
+  "responses": [
+    "Separate hostel facilities are available for boys and girls.",
+    "Hostel allocation depends on seat availability.",
+    "Please contact the hostel office for room allotment details."
+  ]
+},
+{
+  "intent": "fees",
+  "patterns": [
+    "College fees",
+    "Fee structure",
+    "Semester fee",
+    "Annual fee",
+    "Tuition fee",
+    "Admission fee",
+    "Hostel fee",
+    "Fee payment",
+    "Can I pay fees online?",
+    "Fee details"
+  ],
+  "responses": [
+    "Students can pay fees online or through the accounts office.",
+    "Fee details are available on the official college website.",
+    "Please contact the accounts department for the latest fee structure."
+  ]
+},
+{
+  "intent": "courses",
+  "patterns": [
+    "Which courses are offered?",
+    "Available courses",
+    "Programs offered",
+    "B.Tech courses",
+    "MBA available?",
+    "MCA available?",
+    "Engineering branches",
+    "Departments",
+    "Course details",
+    "Academic programs"
+  ],
+  "responses": [
+    "The college offers undergraduate and postgraduate programs in multiple disciplines.",
+    "You can visit the academic section to view all available courses.",
+    "Engineering, management and computer application courses are available."
+  ]
+},
+{
+  "intent": "placement",
+  "patterns": [
+    "Placement details",
+    "Placement cell",
+    "Companies visiting campus",
+    "Highest package",
+    "Average package",
+    "Campus placement",
+    "Placement process",
+    "Placement training",
+    "Internship opportunities",
+    "Top recruiters"
+  ],
+  "responses": [
+    "The Training and Placement Cell conducts placement drives throughout the year.",
+    "Students receive placement training including aptitude, technical and interview preparation.",
+    "Top companies visit the campus during placement season."
+  ]
+},
+{
+  "intent": "library",
+  "patterns": [
+    "Library timing",
+    "Library hours",
+    "Can I borrow books?",
+    "Library membership",
+    "Digital library",
+    "Library rules",
+    "Issue books",
+    "Return books",
+    "Library facilities",
+    "Reading room"
+  ],
+  "responses": [
+    "The library provides books, journals and digital resources for students.",
+    "Students can borrow books using their library membership.",
+    "Please contact the librarian for detailed library rules."
+  ]
+},
+{
+  "intent": "attendance",
+  "patterns": [
+    "Attendance criteria",
+    "Minimum attendance",
+    "Attendance percentage",
+    "How much attendance is required?",
+    "Attendance rules",
+    "Short attendance",
+    "Attendance policy",
+    "Can I appear in exam with low attendance?",
+    "Attendance requirement",
+    "Attendance details"
+  ],
+  "responses": [
+    "Students are required to maintain the minimum attendance percentage as per college rules.",
+    "Please contact your department for attendance-related queries.",
+    "Low attendance may affect examination eligibility."
+  ]
+},
+{
+  "intent": "examination",
+  "patterns": [
+    "Exam schedule",
+    "Exam timetable",
+    "Examination date",
+    "Semester exam",
+    "Internal exam",
+    "Practical exam",
+    "Exam form",
+    "Exam result",
+    "Back paper",
+    "Examination details"
+  ],
+  "responses": [
+    "The examination schedule is released by the examination department.",
+    "Students should regularly check the official notice board for exam updates.",
+    "Contact the examination cell for any exam-related assistance."
+  ]
+},
+{
+  "intent": "faculty",
+  "patterns": [
+    "Faculty details",
+    "Teachers",
+    "Faculty members",
+    "Head of department",
+    "HOD",
+    "Department faculty",
+    "Professor details",
+    "Staff information",
+    "Teaching staff",
+    "Faculty list"
+  ],
+  "responses": [
+    "The college has experienced faculty members across all departments.",
+    "Faculty details are available on the official college website.",
+    "You can contact the respective department for faculty information."
+  ]
+},
+{
+  "intent": "transport",
+  "patterns": [
+    "Bus facility",
+    "College bus",
+    "Transport service",
+    "Bus timing",
+    "Bus route",
+    "Transport fees",
+    "How to use college bus?",
+    "Bus details",
+    "Transport office",
+    "College transport"
+  ],
+  "responses": [
+    "The college provides transport facilities on selected routes.",
+    "Bus timings and routes are available at the transport office.",
+    "Please contact the transport department for complete details."
+  ]
+},
+{
+  "intent": "canteen",
+  "patterns": [
+    "Canteen",
+    "Food court",
+    "Cafeteria",
+    "Canteen timing",
+    "Food available",
+    "Snacks",
+    "Lunch facility",
+    "Meal price",
+    "Canteen menu",
+    "College canteen"
+  ],
+  "responses": [
+    "The college canteen serves hygienic meals and snacks.",
+    "The cafeteria remains open during college working hours.",
+    "A variety of food items are available at affordable prices."
+  ]
+},
+{
+  "intent": "contact",
+  "patterns": [
+    "College contact",
+    "Phone number",
+    "Email address",
+    "Contact details",
+    "Office number",
+    "Admission office contact",
+    "Help desk",
+    "How can I contact college?",
+    "Support",
+    "Customer care"
+  ],
+  "responses": [
+    "You can contact the college through its official phone number or email.",
+    "Visit the official website for updated contact information.",
+    "The help desk is available during working hours."
+  ]
+},
+{
+  "intent": "college_timings",
+  "patterns": [
+    "College timing",
+    "Working hours",
+    "College opening time",
+    "College closing time",
+    "Office timing",
+    "Campus timing",
+    "When does college open?",
+    "When does college close?",
+    "Timing details",
+    "College schedule"
+  ],
+  "responses": [
+    "College working hours may vary depending on the academic schedule.",
+    "Please check the official timetable for department-specific timings.",
+    "Administrative offices are generally open during regular working hours."
   ]
 }
+]
