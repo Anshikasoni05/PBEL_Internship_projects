@@ -12,6 +12,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -31,10 +33,10 @@
 
         </div>
 
-        <div class="status">
-            🟢 Online
-        </div>
-
+       <div class="status">
+        <span class="dot"></span>
+        AI Ready
+       </div>
     </div>
 
     <div class="features">
@@ -47,29 +49,35 @@
 
         <div class="bot-message">
 
-            👋 Hello! Welcome to <strong>CampusAI</strong>.
+👋 <strong>Welcome to CampusAI!</strong>
 
-            <br><br>
+<br><br>
 
-            Ask me anything about:
+I'm your AI-powered college assistant.
 
-            <ul>
+<br><br>
 
-                <li>Admissions</li>
+I can help you with:
 
-                <li>Hostel</li>
+<ul>
 
-                <li>Scholarships</li>
+<li>🎓 Admissions</li>
 
-                <li>Fees</li>
+<li>🏠 Hostel</li>
 
-                <li>Courses</li>
+<li>💰 Fees & Scholarships</li>
 
-                <li>Placements</li>
+<li>📚 Library</li>
 
-            </ul>
+<li>📖 Courses</li>
 
-        </div>
+<li>💼 Placements</li>
+
+<li>📝 Exams & Results</li>
+
+</ul>
+
+</div>
 
     </div>
 
@@ -78,22 +86,22 @@
         <input
             type="text"
             id="message"
-            placeholder="Ask your question here..."
+            placeholder="Ask anything about your college..."
             autocomplete="off"
         >
 
         <button onclick="sendMessage()">
 
-            ➜
+ <i class="fa-solid fa-arrow-right"></i>
 
-        </button>
+
+</button>
 
     </div>
 
     <div class="footer">
 
-        Powered by Machine Learning • Logistic Regression • TF-IDF
-
+        Built with ❤️ using Python • Flask • Scikit-learn • TF-IDF • Logistic Regression
     </div>
 
 </div>
